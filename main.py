@@ -7,3 +7,6 @@ app = FastAPI()
 def get_sum(num1: int = Query(...), num2: int = Query(...)):
     return {"sum": num1 + num2}
 
+class Numbers(BaseModel):
+    num1: int
+    num2: int
