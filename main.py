@@ -12,3 +12,5 @@ class Numbers(BaseModel):
     num2: int
 
 @app.post("/api/difference")
+def post_difference(numbers: Numbers):
+    return {"difference": numbers.num1 - numbers.num2}
