@@ -10,3 +10,5 @@ def get_sum(num1: int = Query(...), num2: int = Query(...)):
 class Numbers(BaseModel):
     num1: int
     num2: int
+
+@app.post("/api/difference")
